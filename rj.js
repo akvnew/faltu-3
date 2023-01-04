@@ -1,3 +1,8 @@
+# https://www.sawaal.com/general-knowledge/english-questions-and-answers.htm?page=5&sort=
+del="@"
+qna=$$('.post').map(_=>_.querySelector('.question_and_options_space5')).filter(_=>_).map(_=>_.innerText.replaceAll("\n", " "))
+$$('.post').map(_=>_.querySelectorAll('td')).filter(_=>_.length).map((_,idx)=>[qna[idx],Array.from(_).slice(4).map(_=>_.innerText.replaceAll("\n"," ").trim().split(") ")[1]).join(del)].join(del)).join("\n")
+
 # https://gk-hindi.in/biology-gk
 del="@"
 qna=$$(".question").map(_=>[_.querySelector("p b").innerText.split(". ").slice(1).join(". "), Array.from(_.querySelectorAll("ul li")).map(_=>_.innerText.split(") ").slice(1).join(") ")).join(del)].join(del))
