@@ -1,3 +1,12 @@
+# https://rajasthangyan.com/question?tid=106&start=0&sort=n
+del="@"
+qs=$$('.maincontent p').map(_=>_.querySelector("span")).filter(_=>_).map(_=>_.innerText.replace(/\s+/g, " ").split(" ").slice(2).join(" ").trim())
+opt=$$('.maincontent p').map(_=>Array.from(_.querySelectorAll("span")).slice(1,5)).filter(_=>_.length).map(_=>_.map(__=>__.innerText.split(")").slice(1).join(")").trim()))
+ans=$$('.maincontent p').map(_=>_.querySelector("button")).filter(_=>_).map(_=>_.getAttribute('onClick').split("this.innerHTML=")[1].split("").slice(1,-1).join(""))
+ans=ans.map((_,idx)=>String.fromCharCode(opt[idx].findIndex(__=>__==_)+65))
+ans.map((_,idx)=>[qs[idx], opt[idx].join(del), _].join(del)).join("\n")
+
+
 # https://www.sawaal.com/general-knowledge/english-questions-and-answers.htm?page=5&sort=
 del="@"
 qna=$$('.post').map(_=>_.querySelector('.question_and_options_space5')).filter(_=>_).map(_=>_.innerText.replaceAll("\n", " "))
