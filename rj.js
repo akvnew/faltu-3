@@ -1,3 +1,12 @@
+# https://techwelkin.com/tools/devlys-unicode-devlys-font-converter/#
+# --- Read data as string
+with open('data.txt', encoding='utf-8') as _:
+    data = _.read()
+print(data)
+# --- Run script now in browser console
+data="<paste-here-data-from-above>"
+data.split(/\s*[0-9]+\.\s*/).filter(_=>_).map((_, sr)=>(sr+1)+". "+_.split(/\s*\([abcd]\)\s*/).map((__, index)=>{$("#legacy_text").val(__.trim()); convert_to_unicode(); idx=""; if(index>0) {idx = "(" + String.fromCharCode(96+index) + ") "}  return idx+$("#unicode_text").val()}).join(" ")).map(_=>_.replace(" (a)", "\n(a)")).join("\n")
+
 # https://rajasthangyan.com/question?tid=106&start=0&sort=n
 del="@"
 qs=$$('.maincontent p').map(_=>_.querySelector("span")).filter(_=>_).map(_=>_.innerText.replace(/\s+/g, " ").split(" ").slice(2).join(" ").trim())
