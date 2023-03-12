@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>1a1e1f1f1f0f1b1f</h2>
+    <div style="display: flex; max-width: 100%; max-height: fit-content; flex-wrap: wrap;">
+    </div>
+</body>
+<script src="result.json"></script>
+<script>
+  let data=[];
+  function pushURL(element) {
+    let _url = element.querySelector('img').src;
+    if(data.includes(_url)) {
+      data.splice((data.indexOf(_url)), 1);
+      element.style.border = "none"
+    } else {
+      data.push(_url);
+      element.style.border = "5px solid rgb(0, 150, 0)"
+    }
+  }
+  let comparison_keys = Object.keys(comparison);
+  let curr_comp = 0;
+  function show_comparison() {
+    let compared_files = comparison[comparison_keys[curr_comp]];
+    document.querySelector('h2').innerHTML = comparison_keys[curr_comp];
+    document.querySelector('div').innerHTML = "";
+    for(let _ of compared_files){
+    document.querySelector('div').innerHTML += `
+      <div class="image" style="max-width: 420px; margin: 20px;" onclick="pushURL(this)">
+        <img src="file:\\\\\\${_.file}" alt="" srcset="" style="max-height: 50%; max-width: 200px; height: auto; width: auto;">
+        <div>${_.file}</div>
+        <div>Dimension: ${_.width}x${_.height}</div>
+        <div>DateCreated: ${_.created}</div>
+        <div>DateModified: ${_.modified}</div>
+        <div>Hash: ${_.file_hash}</div>
+      </div>
+      `;
+    }
+  }
+  show_comparison();
+
+  document.onkeydown = checkKey;
+
+function checkKey(e) {
+
+    e = e || window.event;
+
+    if (e.keyCode == '38') {
+        // up arrow
+    }
+    else if (e.keyCode == '40') {
+        // down arrow
+    }
+    else if (e.keyCode == '37') {
+      // left arrow
+       curr_comp--;
+       show_comparison();
+    }
+    else if (e.keyCode == '39') {
+       // right arrow
+       curr_comp++
+       show_comparison();
+    }
+
+}
+</script>
+</html>
