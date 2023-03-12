@@ -1,4 +1,4 @@
-"|1. |Marketing Services Mgr|Mumbai, Maharashtra|0 - 30 Years|https://hdfcbankcareers.hirealchemy.com/#/description/716ccaaf-2872-49ea-875f-b5e6af9c7aa6|
+|1. |Marketing Services Mgr|Mumbai, Maharashtra|0 - 30 Years|https://hdfcbankcareers.hirealchemy.com/#/description/716ccaaf-2872-49ea-875f-b5e6af9c7aa6|
 |2. |Sales Mgr-Auto|Surendranagar, Gujarat|0 - 5 Years|https://hdfcbankcareers.hirealchemy.com/#/description/f9ba8da0-a1b2-4fa9-8dd1-ac9cca0e702d|
 |3. |Video KYC-Officer|Lucknow, Uttar Pradesh|0 - 3 Years|https://hdfcbankcareers.hirealchemy.com/#/description/98b722bc-ccc7-4af9-897f-ba1275073767|
 |4. |Location Manager-Prevention & Detection|Pune, Maharashtra|0 - 2 Years|https://hdfcbankcareers.hirealchemy.com/#/description/6fc2a0b3-2873-46cc-93e6-2a774d04e0aa|
@@ -268,5 +268,4 @@
 |268. |RBB-RM Service|Navsari, Gujarat|0 - 30 Years|https://hdfcbankcareers.hirealchemy.com/#/description/4ffcd6bd-627b-472e-8547-7bc55a916804|
 |269. |Business Analyst|Mumbai, Maharashtra|0 - 13 Years|https://hdfcbankcareers.hirealchemy.com/#/description/8de6941d-e4a7-42f6-9a73-fb6577745219|
 |270. |Senior Auditor|Ahmedabad, Gujarat|0 - 3 Years|https://hdfcbankcareers.hirealchemy.com/#/description/f6311974-5338-445e-9698-820ff9089286|
-|271. |Credit Manager-Personal Loans|Mumbai, Maharashtra|0 - 0 Years|https://hdfcbankcareers.hirealchemy.com/#/description/75a92b1f-e497-4de7-8813-1926b74c9844|"
-
+|271. |Credit Manager-Personal Loans|Mumbai, Maharashtra|0 - 0 Years|https://hdfcbankcareers.hirealchemy.com/#/description/75a92b1f-e497-4de7-8813-1926b74c9844|
