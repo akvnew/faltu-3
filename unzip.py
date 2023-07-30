@@ -24,10 +24,7 @@ def get_list_of_files_in_dir(directory):
             all_files.append({'file_name':file, 'path':os.path.join(dir, file)})
 
 def move_file(source_file_path, destination_file_path):
-    try:
-        shutil.move(source_file_path, destination_file_path)
-    except Exception as e:
-        print(f"Error while moving the file {source_file_path} to {destination_file_path}: {e}")
+    shutil.move(source_file_path, destination_file_path)
 
 
 def unzip_files(directory):
@@ -39,14 +36,8 @@ def unzip_files(directory):
         files_list = get_list_of_files_in_dir(destination_folder)
         if len(files_list) == 1:
             move_file(files_list[0]['path'], os.path.join(directory, files_list[0]['file_name']))
-            try:
-                shutil.rmtree(destination_folder)
-            except Exception as e:
-                print(f"Error while removing the directory {destination_folder}: {e}")
-        try:
-            os.remove(zip_file)
-        except Exception as e:
-            print(f"Error while removing the file {zip_file}: {e}")
+            shutil.rmtree(destination_folder)
+        os.remove(zip_file)
 
 def main():
     dir = pathlib.Path(__file__).parent.resolve()
